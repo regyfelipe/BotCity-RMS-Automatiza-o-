@@ -14,7 +14,7 @@ class Bot(DesktopBot):
         self.execute(f'C:\RMS\WRMS\SRVRMS\EXE\WRMS.exe')
         self.wait(5000)
         self.save_screenshot("inicio.png")
-        url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+        # coloque seu discodir do botcity url = 'discord.com'
         ds = BotDiscordPlugin(urls=url, username="robo")
         ds.send_message(content='O Robo começou a rodar!')
         ds.send_file(files=['inicio.png'])
@@ -62,7 +62,7 @@ class Bot(DesktopBot):
         self.enter()
         pyautogui.press('f4')
         self.save_screenshot("rms.png")
-        url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+        #  url = 'https://@@@@@@@.com/api/webhooks/@@@@@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
         ds = BotDiscordPlugin(urls=url, username="robo")
         ds.send_message(content='Iniciando exportação para Web!')
         ds.send_file(files=['rms.png'])
@@ -119,7 +119,7 @@ class Bot(DesktopBot):
         self.wait(1000)
         requests.get('http://192.168.0.179/telegram/a.php?messageText=' + 'SINCRONIZANDO PRODUTOS RETAGUARDA')
         self.save_screenshot("retaguarda.png")
-        url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+        #discord url = 'https://@@@@@.com/api/webhooks/@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
         ds = BotDiscordPlugin(urls=url, username="robo")
         ds.send_message(content='Sincronizando produtos retaguarda!')
         ds.send_file(files=['retaguarda.png'])
@@ -146,7 +146,7 @@ class Bot(DesktopBot):
         self.click()
         requests.get('http://192.168.0.179/telegram/a.php?messageText=' + 'SINCRONIZANDO LOJAS')
         self.save_screenshot("sincronizar.png")
-        url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+        # discord url = 'https://@@@@@@@.com/api/webhooks/@@@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
         ds = BotDiscordPlugin(urls=url, username="robo")
         ds.send_message(content='Sincronizando lojas!')
         ds.send_file(files=['sincronizar.png'])
@@ -160,7 +160,7 @@ class Bot(DesktopBot):
         requests.get('http://192.168.0.179/telegram/a.php?messageText=' + 'PROCESSO DO SYSPDVWEB FINALIZADO!')
         logging.info(f'=================================================')
         logging.info(f'Iniciando processo do CartazFacil')
-        url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+       #discord url = 'https://@@@@@@@@@@.com/api/webhooks/@@@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
         ds = BotDiscordPlugin(urls=url, username="robo")
         ds.send_message(content=f'Iniciando processo do cartazfacil!')
         res = requests.get(f'http://192.168.0.183:3469/initCV12/{data_flutuacao}/0')
@@ -176,7 +176,7 @@ class Bot(DesktopBot):
             resultado2 = res2.status_code
             logging.info(f'=================================================')
             logging.info(f'Processo 2 do cartaz finalizado')
-            url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+           # url = 'https://@@@@@@@@@@.com/api/webhooks/@@@@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
             ds = BotDiscordPlugin(urls=url, username="robo")
             ds.send_message(content='Processo 2 do cartaz finalizado!')
             self.wait(5000)
@@ -184,14 +184,14 @@ class Bot(DesktopBot):
                 requests.get('http://192.168.0.179/cartazfacil/swift_email.php')
                 logging.info(f'=================================================')
                 logging.info(f'Processo 3 finalizado')
-                url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+              #  url = 'https://@@@@@@@@@@.com/api/webhooks/@@@@@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
                 ds = BotDiscordPlugin(urls=url, username="robo")
                 ds.send_message(content='Cartaz finalizado!')
 
         else:
             logging.info(f'=================================================')
             logging.info(f'ERRO NO CARTAZFACIL')
-            url = 'https://discord.com/api/webhooks/986238560904572988/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
+        #    url = 'https://@@@@@@@@.com/api/webhooks/@@@@@@@@@@@@@@@@/pEfmDS_-Cvh6qJplwbwNpj3IvGjmtxqF9JXMVf7msI60ED2LXWQtoBCI44NSc-fn_B6E'
             ds = BotDiscordPlugin(urls=url, username="robo")
             ds.send_message(content=f'ERRO NO CARTAZFACIL')
 
